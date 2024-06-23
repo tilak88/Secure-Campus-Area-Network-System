@@ -96,3 +96,41 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `Authentication`: SSH for secure remote access, with access restricted by ACLs.
 
+# 6. Testing and Validation
+To ensure the network operates as intended, the following testing and validation steps were performed:
+
+`Connectivity Tests`: Verified connectivity between all devices using ping and traceroute commands.
+
+`VLAN and Inter-VLAN Routing`: Tested VLAN configurations and inter-VLAN routing to ensure proper communication across different network segments.
+
+`DHCP Functionality`: Checked that devices receive appropriate IP addresses from the DHCP server.
+
+`HSRP Failover`: Simulated failure scenarios to test HSRP failover and redundancy mechanisms.
+
+`Firewall Rules`: Verified firewall rules and policies to ensure proper access control and security.
+
+`Wireless Connectivity`: Checked wireless connectivity and performance using WLC-managed access points.
+
+`Security Audits`: Conducted security audits to identify and mitigate vulnerabilities within the network infrastructure.
+
+# 7. Challenges and Solutions
+
+`Scalability`: Ensured the network design allows for future growth by implementing a hierarchical structure and scalable IP addressing scheme.
+
+`Redundancy`: Addressed potential single points of failure by incorporating HSRP, redundant links, and backup DHCP servers.
+
+`Security`: Implemented robust security measures, including firewalls, ACLs, VLAN segmentation, and secure remote access protocols.
+
+`Performance`: Optimized network performance through proper configuration of EtherChannel, STP, and monitoring tools.
+
+# 8. Network Topology Created: 
+
+The network topology below satisfy the user requirements above and everything is verified, tested and working fine.
+
+![image](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/c814bf68-d93b-4c83-a6be-6b598fca6e54)
+
+# 9. Acknowledgements
+
+This project was successfully completed with the invaluable guidance and project idea provided by Mr. Benard Otom. His insights and expertise were instrumental in the development and implementation of this secure campus area network system.
+
+
