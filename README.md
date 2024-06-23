@@ -10,14 +10,37 @@ Martin Luther King University operates two campuses located 100 miles apart in t
 
 # 2. Network Topology
 The network employs a hierarchical model comprising core, distribution, and access layers to ensure scalability and redundancy. Key components include:
-
+## main campus
 `Core Layer`: Cisco Catalyst 3850 switches for high-speed backbone connectivity.
+
 `Distribution Layer`: Cisco ASA firewalls for security and Catalyst 2960 switches for local network aggregation.
+
 `Access Layer`: Lightweight Access Points (LAPs) managed by Cisco Wireless LAN Controllers (WLCs) for seamless WiFi access.
+
 `Server Farm (DMZ)`: Centralized servers (DHCP, DNS, FTP, WEB, Email, SMTP) housed in a secure DMZ at the main campus.
 
 ## Branch Campus:
 
-Core Layer: Cisco Catalyst 3850 Switches
-Distribution Layer: Cisco ASA Firewall, Catalyst 2960 Switches
-Access Layer: Lightweight Access Points managed by Cisco WL
+`Core Layer`: Cisco Catalyst 3850 Switches
+
+`Distribution Layer`: Cisco ASA Firewall, Catalyst 2960 Switches
+
+`Access Layer`: Lightweight Access Points managed by Cisco WLC
+
+# 3. IP Addressing Scheme
+## Main Campus:
+
+`MANAGEMENT`: 192.168.10.0/24
+
+`LAN`:  172.16.0.0/16
+
+`WLAN`: 10.10.0.0/16
+
+`DMZ`: 10.20.20.0/27
+
+## Branch Campus:
+
+
+`LAN`:  172.17.0.0/16
+
+`WLAN`: 10.11.0.0/16
