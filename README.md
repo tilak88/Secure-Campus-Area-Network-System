@@ -65,11 +65,18 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `Basic Settings`: Configured hostnames, console passwords, enable passwords, banner messages, password encryption, and disabled IP domain lookup.
 
-``Inter-VLAN Routing``: Enabled devices in all departments to communicate with one another by configuring the respective multilayer switch for inter-VLAN routing.
-Core Switch: Assigned IP addresses to Multilayer switches to enable both routing and switching functionalities.
-DHCP Server: Ensured that all devices in the network obtain IP addresses dynamically from Active Directory (AD) servers located at the server farm site.
-HSRP: Implemented high-availability router protocols such as HSRP to achieve redundancy, load balancing, and failover capabilities.
-Static Addressing: Allocated static IP addresses to devices located in the server room.
-Routing Protocol: Utilized OSPF as the routing protocol to advertise routes on the firewall, routers, and multilayer switches.
-Standard ACL for SSH: Established a simple standard ACL on the VTY line to permit remote administrative tasks via SSH only for the Senior Network Security Engineer PC.
-Cisco ASA Firewall: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
+`Inter-VLAN Routing`: Enabled devices in all departments to communicate with one another by configuring the respective multilayer switch for inter-VLAN routing.
+
+`Core Switch`: Assigned IP addresses to Multilayer switches to enable both routing and switching functionalities.
+
+`DHCP Server`: Ensured that all devices in the network obtain IP addresses dynamically from Active Directory (AD) servers located at the server farm site.
+
+`HSRP`: Implemented high-availability router protocols such as HSRP to achieve redundancy, load balancing, and failover capabilities.
+
+`Static Addressing`: Allocated static IP addresses to devices located in the server room.
+
+`Routing Protocol`: Utilized OSPF as the routing protocol to advertise routes on the firewall, routers, and multilayer switches.
+
+`Standard ACL for SSH`: Established a simple standard ACL on the VTY line to permit remote administrative tasks via SSH only for the Senior Network Security Engineer PC.
+
+`Cisco ASA Firewall`: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
