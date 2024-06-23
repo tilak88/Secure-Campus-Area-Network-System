@@ -2,16 +2,16 @@
 # Case Study and Requirements
 ## Overview
 
-This project presents a detailed and comprehensive network design for . The network infrastructure has been designed using Cisco Packet Tracer, ensuring a secure, scalable, and reliable system that supports the educational and administrative needs of the college.
+This project presents a detailed and comprehensive network design for a university campus area . The network infrastructure has been designed using Cisco Packet Tracer, ensuring a secure, scalable, and reliable system that supports the educational and administrative needs of the college.
 
-# 1. Project Overview
+### 1. Project Overview
 
 Martin Luther King University operates two campuses located 100 miles apart in the United States, hosting diverse faculties including `Health Sciences`, `Business`, `Engineering` and `Art/Design`.To ensure seamless connectivity and technological cohesion, an integral component of the university is its Information Technology (IT) department situated at the main campus. The university's `IT Department` at the main campus manages a unified network connecting both campuses, supporting approximately 30,000 users. With user counts expected to double by 2025, the project emphasizes `scalability` and robust infrastructure.
 
-# 2. Network Topology
+### 2. Network Topology
 
 The network employs a hierarchical model comprising core, distribution, and access layers to ensure scalability and redundancy. Key components include:
-## main campus
+#### main campus
 * `Core Layer`: Cisco Catalyst 3850 switches for high-speed backbone connectivity.
 
 * `Distribution Layer`: Cisco ASA firewalls for security and Catalyst 2960 switches for local network aggregation.
@@ -20,7 +20,7 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 * `Server Farm (DMZ)`: Centralized servers (DHCP, DNS, FTP, WEB, Email, SMTP) housed in a secure DMZ at the main campus.
 
-## Branch Campus:
+#### Branch Campus:
 
 * `Core Layer`: Cisco Catalyst 3850 Switches
 
@@ -28,15 +28,15 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 * `Access Layer`: Lightweight Access Points managed by Cisco WLC
 
-# 3. Network Topology Created: 
+### 3. Network Topology Created: 
 
 The network topology below satisfy the user requirements above and everything is verified, tested and working fine.
 
 ![image](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/a346648c-ac18-4054-8d7a-f750f722353a)
 
 
-# 4. IP Addressing & Subnetting
-## Main Campus:
+### 4. IP Addressing & Subnetting
+#### Main Campus:
 
 * `MANAGEMENT`: 192.168.10.0/24
 
@@ -46,7 +46,7 @@ The network topology below satisfy the user requirements above and everything is
 
 * `DMZ`: 10.20.20.0/27
 
-## Branch Campus:
+#### Branch Campus:
 
 
 * `LAN`:  172.17.0.0/16
@@ -59,7 +59,7 @@ The network topology below satisfy the user requirements above and everything is
 
 
 
-# 5. Technologies Implemented
+### 5. Technologies Implemented
 
 #### Design Tool: Cisco Packet Tracer
 
@@ -96,7 +96,7 @@ The network topology below satisfy the user requirements above and everything is
 * `Cisco ASA Firewall`: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
 
 
-# 6. Security Measures
+### 6. Security Measures
 
 * `Firewalls`: Implemented Cisco ASA Firewalls to manage and filter traffic.
 
@@ -110,7 +110,7 @@ The network topology below satisfy the user requirements above and everything is
 
 * `Authentication`: SSH for secure remote access, with access restricted by ACLs.
 
-# 7. Testing and Validation
+### 7. Testing and Validation
 To ensure the network operates as intended, the following testing and validation steps were performed:
 
 * `Connectivity Tests`: Verified connectivity between all devices using ping and traceroute commands.
@@ -127,7 +127,7 @@ To ensure the network operates as intended, the following testing and validation
 
 * `Security Audits`: Conducted security audits to identify and mitigate vulnerabilities within the network infrastructure.
 
-# 8. Challenges and Solutions
+### 8. Challenges and Solutions
 
 * `Scalability`: Ensured the network design allows for future growth by implementing a hierarchical structure and scalable IP addressing scheme.
 
@@ -137,7 +137,7 @@ To ensure the network operates as intended, the following testing and validation
 
 * `Performance`: Optimized network performance through proper configuration of EtherChannel, STP, and monitoring tools.
 
-# 9. Acknowledgements
+### 9. Acknowledgements
 
 This project was successfully completed with the invaluable guidance and project idea provided by Mr. Benard Otom. His insights and expertise were instrumental in the development and implementation of this secure campus area network system.
 
