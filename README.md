@@ -27,7 +27,14 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `Access Layer`: Lightweight Access Points managed by Cisco WLC
 
-# 3. IP Addressing Scheme
+# 3. Network Topology Created: 
+
+The network topology below satisfy the user requirements above and everything is verified, tested and working fine.
+
+![image](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/a346648c-ac18-4054-8d7a-f750f722353a)
+
+
+# 4. IP Addressing Scheme
 ## Main Campus:
 
 `MANAGEMENT`: 192.168.10.0/24
@@ -45,7 +52,7 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `WLAN`: 10.11.0.0/16
 
-# 4. Technologies Implemented
+# 5. Technologies Implemented
 
 #### Design Tool: Cisco Packet Tracer
 
@@ -82,7 +89,7 @@ The network employs a hierarchical model comprising core, distribution, and acce
 `Cisco ASA Firewall`: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
 
 
-# 5. Security Measures
+# 6. Security Measures
 
 `Firewalls`: Implemented Cisco ASA Firewalls to manage and filter traffic.
 
@@ -96,7 +103,7 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `Authentication`: SSH for secure remote access, with access restricted by ACLs.
 
-# 6. Testing and Validation
+# 7. Testing and Validation
 To ensure the network operates as intended, the following testing and validation steps were performed:
 
 `Connectivity Tests`: Verified connectivity between all devices using ping and traceroute commands.
@@ -113,7 +120,7 @@ To ensure the network operates as intended, the following testing and validation
 
 `Security Audits`: Conducted security audits to identify and mitigate vulnerabilities within the network infrastructure.
 
-# 7. Challenges and Solutions
+# 8. Challenges and Solutions
 
 `Scalability`: Ensured the network design allows for future growth by implementing a hierarchical structure and scalable IP addressing scheme.
 
@@ -122,12 +129,6 @@ To ensure the network operates as intended, the following testing and validation
 `Security`: Implemented robust security measures, including firewalls, ACLs, VLAN segmentation, and secure remote access protocols.
 
 `Performance`: Optimized network performance through proper configuration of EtherChannel, STP, and monitoring tools.
-
-# 8. Network Topology Created: 
-
-The network topology below satisfy the user requirements above and everything is verified, tested and working fine.
-
-![image](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/c814bf68-d93b-4c83-a6be-6b598fca6e54)
 
 # 9. Acknowledgements
 
