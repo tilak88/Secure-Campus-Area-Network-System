@@ -47,7 +47,7 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 # 4. Technologies Implemented
 
-## Design Tool: Cisco Packet Tracer
+#### Design Tool: Cisco Packet Tracer
 
 ## Hierarchical Design: Incorporates redundancy for enhanced network resilience.
 
