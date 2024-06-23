@@ -53,11 +53,11 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `ISPs`: Connectivity to Airtel ISP Router within the network infrastructure.
 
-`WLC`: Each department is equipped with a Wireless Access Point (WAP) to provide WiFi access to employees, corporate users, external auditors, and guests, all centrally managed by a Wireless LAN Controller (WLC).
+`WLC`: Each department is equipped with a Wireless Access Point (WAP) to provide WiFi access to employees, corporate users, external auditors, and guests, all centrally managed by a Wireless LAN Controller **(WLC)**.
 
-`VLAN`: VLANs with IDs 10 for Management, 20 for LAN, 50 for WLAN, and 199 for Blackhole (unused ports).
+`VLAN`: VLANs with IDs **10** for **Management**, **20** for **LAN**, **50** for **WLAN**, and **199** for **Blackhole** (unused ports).
 
-`EtherChannel`: Implemented LACP for EtherChannel configuration, enhancing link aggregation efficiency.
+`EtherChannel`: Implemented **LACP** for EtherChannel configuration, enhancing link aggregation efficiency.
 
 `STP PortFast and BPDUguard`: Configured to expedite port transitions from blocking to forwarding states.
 
@@ -69,14 +69,30 @@ The network employs a hierarchical model comprising core, distribution, and acce
 
 `Core Switch`: Assigned IP addresses to Multilayer switches to enable both routing and switching functionalities.
 
-`DHCP Server`: Ensured that all devices in the network obtain IP addresses dynamically from Active Directory (AD) servers located at the server farm site.
+`DHCP Server`: Ensured that all devices in the network **obtain IP addresses dynamically** from two **DHCP** servers located at the server farm site.
 
-`HSRP`: Implemented high-availability router protocols such as HSRP to achieve redundancy, load balancing, and failover capabilities.
+`HSRP`: Implemented high-availability router protocols such as **HSRP** to achieve redundancy, load balancing, and failover capabilities.
 
 `Static Addressing`: Allocated static IP addresses to devices located in the server room.
 
-`Routing Protocol`: Utilized OSPF as the routing protocol to advertise routes on the firewall, routers, and multilayer switches.
+`Routing Protocol`: Utilized **OSPF** as the routing protocol to advertise routes on the firewall, routers, and multilayer switches.
 
 `Standard ACL for SSH`: Established a simple standard ACL on the VTY line to permit remote administrative tasks via SSH only for the Senior Network Security Engineer PC.
 
 `Cisco ASA Firewall`: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
+
+
+# 5. Security Measures
+
+`Firewalls`: Implemented Cisco ASA Firewalls to manage and filter traffic.
+
+`ACLs`: Configured standard and extended ACLs to restrict access based on IP addresses and traffic types.
+
+`VLAN Segmentation`: Segmented network traffic to improve security and manageability.
+
+`Port Security`: Implemented PortFast and BPDUguard on switch ports to prevent STP attacks.
+
+`HSRP`: Configured for high availability and redundancy.
+
+`Authentication`: SSH for secure remote access, with access restricted by ACLs.
+
