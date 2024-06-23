@@ -44,3 +44,30 @@ The network employs a hierarchical model comprising core, distribution, and acce
 `LAN`:  172.17.0.0/16
 
 `WLAN`: 10.11.0.0/16
+
+# 4. Technologies Implemented
+
+## Design Tool: Cisco Packet Tracer
+
+## Hierarchical Design: Incorporates redundancy for enhanced network resilience.
+
+## ISPs: Connectivity to Airtel ISP Router within the network infrastructure.
+
+## WLC: Each department is equipped with a Wireless Access Point (WAP) to provide WiFi access to employees, corporate users, external auditors, and guests, all centrally managed by a Wireless LAN Controller (WLC).
+
+`VoIP`: Deployed IP phones in each department to support Voice over IP (VoIP) communication.
+
+`VLAN`: VLANs with IDs 10 for Management, 20 for LAN, 50 for WLAN, and 199 for Blackhole (unused ports).
+
+EtherChannel: Implemented LACP for EtherChannel configuration, enhancing link aggregation efficiency.
+STP PortFast and BPDUguard: Configured to expedite port transitions from blocking to forwarding states.
+Subnetting: Utilized to allocate the appropriate number of IP addresses to each network group.
+Basic Settings: Configured hostnames, console passwords, enable passwords, banner messages, password encryption, and disabled IP domain lookup.
+Inter-VLAN Routing: Enabled devices in all departments to communicate with one another by configuring the respective multilayer switch for inter-VLAN routing.
+Core Switch: Assigned IP addresses to Multilayer switches to enable both routing and switching functionalities.
+DHCP Server: Ensured that all devices in the network obtain IP addresses dynamically from Active Directory (AD) servers located at the server farm site.
+HSRP: Implemented high-availability router protocols such as HSRP to achieve redundancy, load balancing, and failover capabilities.
+Static Addressing: Allocated static IP addresses to devices located in the server room.
+Routing Protocol: Utilized OSPF as the routing protocol to advertise routes on the firewall, routers, and multilayer switches.
+Standard ACL for SSH: Established a simple standard ACL on the VTY line to permit remote administrative tasks via SSH only for the Senior Network Security Engineer PC.
+Cisco ASA Firewall: Configured default static routes, basic settings, security levels, zones, and policies to define access control and resource utilization within the network.
