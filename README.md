@@ -35,7 +35,7 @@ The network topology below satisfy the user requirements above and everything is
 ![image](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/a346648c-ac18-4054-8d7a-f750f722353a)
 
 
-# 4. IP Addressing Scheme
+# 4. IP Addressing & Subnetting
 ## Main Campus:
 
 * `MANAGEMENT`: 192.168.10.0/24
@@ -52,6 +52,12 @@ The network topology below satisfy the user requirements above and everything is
 * `LAN`:  172.17.0.0/16
 
 * `WLAN`: 10.11.0.0/16
+
+  ![IP ADDRESSING AND SUBNETTING](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/1cf0217f-bf88-465e-bf35-d8d871b18e53)
+
+  ![IP BETWEEN THE CLOUD ISP FIREWALL ROUTERS AND MULTILAYER SWITCH](https://github.com/tilak88/Secure-Campus-Area-Network-System/assets/169588136/cb202b37-8b0d-4619-a8d3-a73aac40f106)
+
+
 
 # 5. Technologies Implemented
 
